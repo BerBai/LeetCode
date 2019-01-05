@@ -3,12 +3,22 @@
 //当n >= 5时，f(n!) = k + f(k!), 其中 k = n / 5（取整）。
 
 class Solution {
-    public int trailingZeroes(int n) {
+    //循环
+    public int trailingZeroes1(int n) {
         int ans = 0;
         while(n >= 5) {
             n /= 5;
             ans += n;
         }
         return ans;
+    }
+    
+    //递归
+    public int trailingZeroes(int n) {
+        if(n < 5)
+            return 0;
+        else {
+            return trailingZeroes(n/5) + n/5;
+        }
     }
 }
