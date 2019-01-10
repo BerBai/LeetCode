@@ -41,7 +41,7 @@ class Solution {
             peak = prices[i];
             maxprofit += peak - valley;
         }
-        return maxprofit; 
+        return maxprofit;
     }
     
     //一次遍历法
