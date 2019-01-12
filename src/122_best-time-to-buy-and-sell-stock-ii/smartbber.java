@@ -17,7 +17,7 @@ class Solution {
                         maxprofit = profit;
                     }
                 }
-            }
+            } 
             if(maxprofit > max)
                 max = maxprofit;
         }
