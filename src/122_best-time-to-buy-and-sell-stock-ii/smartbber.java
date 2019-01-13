@@ -42,7 +42,7 @@ class Solution {
             maxprofit += peak - valley;
         }
         return maxprofit;
-    }
+    } 
 
     //一次遍历法
     public int maxProfit(int[] prices) {
