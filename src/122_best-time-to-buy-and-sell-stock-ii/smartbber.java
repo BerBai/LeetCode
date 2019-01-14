@@ -24,7 +24,7 @@ class Solution {
         return max;
     }
 
-    //峰谷法
+    //峰谷法 
     public int maxProfit2(int[] prices) {
         if(prices.length == 0) 
             return 0;
