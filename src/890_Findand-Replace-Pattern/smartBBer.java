@@ -15,7 +15,7 @@ class Solution {
                     if(!hashMap.containsValue(words[i].charAt(j)))    //这种情况很容易遗漏，当某个字符从来没有在hashmap的key中出现过时，还要判断hashmap中的value是否出现将要插入的words[i].charat(j)的字符，如果有，那说明肯定和之前某个字符重复了，但这和pattern重复了
                         hashMap.put(pattern.charAt(j),words[i].charAt(j));
                     else
-                    {
+                    { 
                         isTest = false;
                         break;
                     }
