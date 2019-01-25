@@ -13,7 +13,7 @@ class Solution {
     //
     public int rangeBitwiseAnd1(int m, int n) {
         int ans = m & n;
-        int len = n - m + 1;
+        int len = n - m + 1; 
         int i = 1;
         if(len > 2) {
             while(true) {
