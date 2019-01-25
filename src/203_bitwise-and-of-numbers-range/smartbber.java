@@ -8,7 +8,7 @@ class Solution {
         }
         
         return ans;
-    }
+    } 
     
     //
     public int rangeBitwiseAnd1(int m, int n) {
