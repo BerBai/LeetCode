@@ -14,4 +14,4 @@ class Solution {
         }
         return new int[]{i,j}; //返回两个数的位置
     }
-}
+} 
