@@ -1,7 +1,8 @@
 //复杂度要求O(logn)
 //将数组分为两组，一组有序，一组可能有序，也可能部分有序
-//当target在nums[low],nums[mid]之间,继续分两组
-//否则在另一半分两组查找
+//此时有序部分用二分法查找。
+//无序部分再一分为二，其中一个一定有序，另一个可能有序，可能无序。
+
 class Solution {
     public int search(int[] nums, int target) {
         return search(nums, 0, nums.length - 1, target);
