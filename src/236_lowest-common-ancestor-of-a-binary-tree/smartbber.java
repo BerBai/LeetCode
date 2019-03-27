@@ -8,6 +8,9 @@
  * }
  */
 class Solution {
+    //递归找出q p的位置，分别赋给left和right
+    //如果两者都不为空，则root为所求
+    //如果有一边为空，则另一个为所求
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if(root == null)
             return null;
