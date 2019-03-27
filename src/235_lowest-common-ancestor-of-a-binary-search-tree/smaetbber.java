@@ -9,6 +9,7 @@
  */
 class Solution {
     //根据二叉树的特点进行递归
+    //对数据有较强依赖，容错性差
     TreeNode ans = null;
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         search(root, p, q);
